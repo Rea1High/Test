@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณค่าบริการตามระยะทาง</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1 class="title">คำนวณค่าบริการตามระยะทาง</h1>
+        <form id="calculatorForm">
+            <div class="input-group">
+                <label for="distance">ระยะทาง (กิโลเมตร)</label>
+                <input 
+                    type="number" 
+                    id="distance" 
+                    step="0.1" 
+                    min="0" 
+                    required 
+                    placeholder="กรุณาใส่ระยะทาง"
+                >
+            </div>
+            <button type="submit">คำนวณ</button>
+        </form>
+        <div class="result" id="result">
+            <h3 class="result-title">ผลการคำนวณ</h3>
+            <div class="cost" id="cost"></div>
+            <div class="details" id="details"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
